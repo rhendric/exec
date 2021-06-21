@@ -12,7 +12,7 @@
     "postversion": "npm publish",
     "prepublishOnly": "git push origin --follow-tags",
     "snap": "tap",
-    "test": "tap",
+    "test": "node -p \"require('os').constants.signals\"",
     "npmclilint": "npmcli-lint",
     "lint": "npm run npmclilint -- \"lib/**/*.*js\" \"test/**/*.*js\"",
     "lintfix": "npm run lint -- --fix",
